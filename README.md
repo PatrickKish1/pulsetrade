@@ -1,6 +1,6 @@
 # AI-Powered Trading Platform
 
-Welcome to the **AI-Powered Trading Platform** repository! This platform combines cutting-edge AI capabilities, blockchain technology, and seamless integration with existing trading tools (like MT5) to deliver a state-of-the-art trading experience for users. It is designed to empower both individual traders and trade administrators to maximize profits, manage accounts efficiently, and execute trades with real-time intelligence.
+Welcome to the **AI-Powered Trading Platform** repository! This platform combines cutting-edge AI capabilities, blockchain technology, and seamless integration to deliver a state-of-the-art trading experience. It is designed to empower both individual traders and trade administrators to maximize profits, manage accounts efficiently, and execute trades with real-time intelligence.
 
 ---
 
@@ -22,15 +22,15 @@ Welcome to the **AI-Powered Trading Platform** repository! This platform combine
    - Aggregated portfolio views for all managed accounts.
    - AI-assisted sub-account trading and management.
 
-3. **Integration with MT5**
+3. **User Types**
 
-   - Users can link their MT5 accounts for real-time trade synchronization.
-   - AI and manual trades executed on MT5 are reflected in the platform dashboard.
+   - **Regular Users**: Beginner, intermediate, and pro traders leveraging AI and platform tools for trading.
+   - **Trade Admins**: Manage sub-accounts, use AI to optimize multiple portfolios, and earn profit shares.
 
 4. **Blockchain Integration**
 
    - Smart contracts for profit sharing and virtual balance management.
-   - Decentralized wallet connectivity for secure transactions.
+   - Decentralized wallet connectivity with support for MetaMask and StarkNet's Argent Wallet.
 
 5. **Rich Analytics and Reporting**
 
@@ -52,11 +52,11 @@ Welcome to the **AI-Powered Trading Platform** repository! This platform combine
 - **Spectral**: Enhances risk assessment by analyzing user creditworthiness for trading decisions.
 - **Citrea**: Manages complex workflows, ensuring AI and user actions are synchronized effectively.
 - **Koii**: Facilitates decentralized content validation and distribution for learning modules and rewards with platform tokens.
-- **StarkNet**: Offers scalable and secure Layer 2 solutions for faster blockchain interactions and transaction finality.
+- **StarkNet**: Offers scalable and secure Layer 2 solutions for faster blockchain interactions, supporting smart contracts for specific services like profit sharing.
 
 ### **Frontend**
 
-- **React**: For building a responsive and dynamic user interface.
+- **Next.js**: For building a responsive and dynamic user interface.
 - **Chart.js**: For visualizing trade data and performance metrics.
 - **Tailwind CSS**: For a consistent and modern design system.
 
@@ -68,8 +68,10 @@ Welcome to the **AI-Powered Trading Platform** repository! This platform combine
 
 ### **AI Engine**
 
-- **Python (TensorFlow, PyTorch)**: Used for developing and training machine learning models that generate trade signals and manage portfolio decisions.
-- **FastAPI**: Hosts the AI engine as an API service, ensuring fast and reliable communication with the backend.
+- **Open Source LLMs**:
+  - **GPT-J**: Handles natural language understanding for sentiment analysis and trade-related news. It analyzes market trends, social media sentiments, and financial news to influence trading decisions.
+  - **Falcon**: Focuses on technical data analysis and trade signal generation. It processes technical indicators like moving averages, RSI, and MACD to create actionable trade signals.
+  - **LLaMA**: Synthesizes technical, fundamental, and sentiment data to generate a final trade recommendation. This model integrates inputs from both Falcon’s technical analysis and GPT-J’s sentiment insights for holistic decision-making.
 - **AI Functionality**:
   - Technical analysis of trading indicators (e.g., RSI, MACD, moving averages).
   - Fundamental analysis, including earnings reports and economic data.
@@ -78,13 +80,12 @@ Welcome to the **AI-Powered Trading Platform** repository! This platform combine
 
 ### **Blockchain**
 
-- **Ethereum/Polygon**: For deploying smart contracts that handle profit sharing and virtual balances.
+- **Ethereum/Polygon**: For deploying general smart contracts that handle profit sharing and virtual balances.
+- **StarkNet**: Used specifically for faster, secure Layer 2 smart contracts, including those for trust agreements and trade-related services.
 - **Web3.js**: Facilitates interactions between the app and blockchain networks.
-- **Metamask**: Wallet integration for decentralized transactions.
-
-### **Trading Integration**
-
-- **MT5 API**: For syncing trades and executing both AI-driven and manual trades directly on the MT5 platform.
+- **Wallet Integration**:
+  - **MetaMask**: Standard wallet for Ethereum-based interactions.
+  - **Argent Wallet**: A StarkNet-compatible wallet for decentralized transactions, providing an additional layer of scalability and security for StarkNet-based interactions.
 
 ### **Database**
 
@@ -104,10 +105,7 @@ Welcome to the **AI-Powered Trading Platform** repository! This platform combine
 ### **Workflow Overview**
 
 1. **User Registration & Onboarding**:
-
-   - Users create accounts, connect their MT5 profiles, and configure AI settings.
-   - Blockchain wallets are linked for decentralized interactions.
-
+   - Users create accounts, configure AI settings, and link wallets (MetaMask/Argent).
 2. **AI-Driven Operations**:
 
    - AI analyzes market data and generates trade signals.
@@ -115,8 +113,7 @@ Welcome to the **AI-Powered Trading Platform** repository! This platform combine
 
 3. **Trade Execution**:
 
-   - Manual trades are initiated via the MT5 API.
-   - AI trades are directly executed and reflected in the dashboard.
+   - Trades initiated by AI or users are executed via integrated APIs and reflected on the platform dashboard.
 
 4. **Profit Sharing**:
 
@@ -134,16 +131,15 @@ Welcome to the **AI-Powered Trading Platform** repository! This platform combine
 
 ### **Integration Overview**
 
-| Component       | Technology                                        | Functionality                                              |
-| --------------- | ------------------------------------------------- | ---------------------------------------------------------- |
-| **Frontend**    | React, Chart.js                                   | User interface, dashboards, and data visualization.        |
-| **Backend**     | Node.js, Express                                  | API management, user authentication, and trade sync logic. |
-| **AI Engine**   | TensorFlow, FastAPI                               | Trade signal generation and portfolio optimization.        |
-| **Blockchain**  | Solidity, Web3.js                                 | Smart contracts for profit sharing and virtual balances.   |
-| **Trading API** | MT5 API                                           | Trade execution and syncing with the platform.             |
-| **Database**    | PostgreSQL, Redis                                 | Persistent and cached data storage.                        |
-| **DevOps**      | Docker, Kubernetes                                | Scalable deployment and container orchestration.           |
-| **Core Tech**   | Particle, iExec, Spectral, Citrea, Koii, StarkNet | Decentralized workflows, risk assessment, and performance. |
+| Component      | Technology                                        | Functionality                                              |
+| -------------- | ------------------------------------------------- | ---------------------------------------------------------- |
+| **Frontend**   | Next.js, Chart.js                                 | User interface, dashboards, and data visualization.        |
+| **Backend**    | Node.js, Express                                  | API management, user authentication, and trade sync logic. |
+| **AI Engine**  | GPT-J, Falcon, LLaMA                              | Multi-LLM collaboration for trade insights and decisions.  |
+| **Blockchain** | Solidity, Web3.js                                 | Smart contracts for profit sharing and virtual balances.   |
+| **Database**   | PostgreSQL, Redis                                 | Persistent and cached data storage.                        |
+| **DevOps**     | Docker, Kubernetes                                | Scalable deployment and container orchestration.           |
+| **Core Tech**  | Particle, iExec, Spectral, Citrea, Koii, StarkNet | Decentralized workflows, risk assessment, and performance. |
 
 ---
 
@@ -154,8 +150,7 @@ Welcome to the **AI-Powered Trading Platform** repository! This platform combine
 - **Node.js** (v14+)
 - **Python** (3.8+)
 - **Docker**
-- **Metamask** (Browser Extension)
-- **MT5 Account**
+- **MetaMask/Argent Wallet**
 
 ### Local Development
 
