@@ -11,12 +11,16 @@ Welcome to the **AI-Powered Trading Platform** repository! This platform combine
    - Automated trade execution with real-time decision-making.
    - Trade signal generation for manual approval or autonomous operation.
    - Configurable AI settings for risk tolerance and trade size.
+   - Portfolio management with AI-based suggestions for diversification and optimization.
+   - Trade signal suggestions based on technical, fundamental, and sentiment analysis.
+   - Updates on market news and trends across stocks, forex, and crypto assets.
 
 2. **Trade Admin Features**
 
-   - Sub-account management with virtual balances.
+   - Sub-account management with virtual balances to prevent direct fund access.
    - Profit-sharing mechanisms with blockchain-based smart contracts.
    - Aggregated portfolio views for all managed accounts.
+   - AI-assisted sub-account trading and management.
 
 3. **Integration with MT5**
 
@@ -29,12 +33,26 @@ Welcome to the **AI-Powered Trading Platform** repository! This platform combine
    - Decentralized wallet connectivity for secure transactions.
 
 5. **Rich Analytics and Reporting**
+
    - Performance insights with charts and metrics.
    - Comparative analysis of AI-driven vs. manual trades.
+
+6. **Learning and Rewards**
+   - Tutorials for beginner traders as Koii tasks, rewarding users with platform tokens upon completion.
+   - Tokens created on Koii are used to incentivize engagement and learning.
 
 ---
 
 ## Technologies Used
+
+### **Core Technologies**
+
+- **Particle**: Ensures seamless interaction with blockchain networks for executing trades and smart contract functionalities.
+- **iExec**: Provides decentralized computing power for AI model execution, data sharing, and secure data access through Data Protectors and Web3Mail.
+- **Spectral**: Enhances risk assessment by analyzing user creditworthiness for trading decisions.
+- **Citrea**: Manages complex workflows, ensuring AI and user actions are synchronized effectively.
+- **Koii**: Facilitates decentralized content validation and distribution for learning modules and rewards with platform tokens.
+- **StarkNet**: Offers scalable and secure Layer 2 solutions for faster blockchain interactions and transaction finality.
 
 ### **Frontend**
 
@@ -52,6 +70,11 @@ Welcome to the **AI-Powered Trading Platform** repository! This platform combine
 
 - **Python (TensorFlow, PyTorch)**: Used for developing and training machine learning models that generate trade signals and manage portfolio decisions.
 - **FastAPI**: Hosts the AI engine as an API service, ensuring fast and reliable communication with the backend.
+- **AI Functionality**:
+  - Technical analysis of trading indicators (e.g., RSI, MACD, moving averages).
+  - Fundamental analysis, including earnings reports and economic data.
+  - Sentiment analysis using news and social media trends.
+  - Dynamic trade signal generation tailored to user profiles (e.g., beginner, intermediate, pro).
 
 ### **Blockchain**
 
@@ -101,20 +124,26 @@ Welcome to the **AI-Powered Trading Platform** repository! This platform combine
    - Virtual balances are updated after each trade.
 
 5. **Analytics & Reporting**:
+
    - Users view performance metrics, trade history, and profit/loss reports.
    - Admins monitor sub-account activities and overall portfolio performance.
 
+6. **Learning and Rewards**:
+   - Tutorials on Koii educate beginners about trading strategies.
+   - Completing tasks rewards users with platform tokens.
+
 ### **Integration Overview**
 
-| Component       | Technology          | Functionality                                              |
-| --------------- | ------------------- | ---------------------------------------------------------- |
-| **Frontend**    | React, Chart.js     | User interface, dashboards, and data visualization.        |
-| **Backend**     | Node.js, Express    | API management, user authentication, and trade sync logic. |
-| **AI Engine**   | TensorFlow, FastAPI | Trade signal generation and portfolio optimization.        |
-| **Blockchain**  | Solidity, Web3.js   | Smart contracts for profit sharing and virtual balances.   |
-| **Trading API** | MT5 API             | Trade execution and syncing with the platform.             |
-| **Database**    | PostgreSQL, Redis   | Persistent and cached data storage.                        |
-| **DevOps**      | Docker, Kubernetes  | Scalable deployment and container orchestration.           |
+| Component       | Technology                                        | Functionality                                              |
+| --------------- | ------------------------------------------------- | ---------------------------------------------------------- |
+| **Frontend**    | React, Chart.js                                   | User interface, dashboards, and data visualization.        |
+| **Backend**     | Node.js, Express                                  | API management, user authentication, and trade sync logic. |
+| **AI Engine**   | TensorFlow, FastAPI                               | Trade signal generation and portfolio optimization.        |
+| **Blockchain**  | Solidity, Web3.js                                 | Smart contracts for profit sharing and virtual balances.   |
+| **Trading API** | MT5 API                                           | Trade execution and syncing with the platform.             |
+| **Database**    | PostgreSQL, Redis                                 | Persistent and cached data storage.                        |
+| **DevOps**      | Docker, Kubernetes                                | Scalable deployment and container orchestration.           |
+| **Core Tech**   | Particle, iExec, Spectral, Citrea, Koii, StarkNet | Decentralized workflows, risk assessment, and performance. |
 
 ---
 
