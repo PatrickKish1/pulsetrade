@@ -149,7 +149,6 @@ Welcome to the **AI-Powered Trading Platform** repository! This platform combine
 
 The following table outlines the smart contracts required for the platform, their deployment platforms, and functionality:
 
-```markdown
 | **Contract Name**              | **Platform**        | **Purpose**                                                                  |
 | ------------------------------ | ------------------- | ---------------------------------------------------------------------------- |
 | User Management Contract       | Ethereum (Solidity) | Manage users, roles, and wallet connections.                                 |
@@ -161,7 +160,6 @@ The following table outlines the smart contracts required for the platform, thei
 | Data Protection Contract       | iExec (Off-chain)   | Store encrypted data references and enable secure communication via iExec.   |
 | Workflow Management Contract   | Citrea (StarkNet)   | Manage workflows and tasks within the platform (Citrea integration).         |
 | Wallet Compatibility Contracts | Ethereum, StarkNet  | Support MetaMask and StarkNet Argent wallets for decentralized transactions. |
-```
 
 ---
 
