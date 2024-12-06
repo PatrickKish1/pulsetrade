@@ -149,17 +149,17 @@ Welcome to the **AI-Powered Trading Platform** repository! This platform combine
 
 The following table outlines the smart contracts required for the platform, their deployment platforms, and functionality:
 
-| **Contract Name**              | **Platform**        | **Purpose**                                                                  |
-| ------------------------------ | ------------------- | ---------------------------------------------------------------------------- |
-| User Management Contract       | Ethereum (Solidity) | Manage users, roles, and wallet connections.                                 |
-| Profit-Sharing Contract        | Ethereum (Solidity) | Handle profit distribution between trade admins and sub-accounts.            |
-| Token Contract                 | Ethereum (Solidity) | Manage platform tokens for rewards and transactions.                         |
-| Reward Distribution Contract   | Ethereum (Solidity) | Incentivize users for completing tasks (can merge with token contract).      |
-| Trade Execution Contract       | Ethereum (Solidity) | Record trade details and ensure transparency.                                |
-| Virtual Balance Contract       | Ethereum (Solidity) | Manage virtual balances for trade admins and sub-accounts.                   |
-| Data Protection Contract       | iExec (Off-chain)   | Store encrypted data references and enable secure communication via iExec.   |
-| Workflow Management Contract   | Citrea (StarkNet)   | Manage workflows and tasks within the platform (Citrea integration).         |
-| Wallet Compatibility Contracts | Ethereum, StarkNet  | Support MetaMask and StarkNet Argent wallets for decentralized transactions. |
+| **Contract Name**              | **Platform**        | **Purpose**                                                                                   |
+| ------------------------------ | ------------------- | --------------------------------------------------------------------------------------------- |
+| User Management Contract       | Ethereum (Solidity) | Manage users, roles, and wallet connections.                                                  |
+| Profit-Sharing Contract        | Ethereum (Solidity) | Handle profit distribution between trade admins and sub-accounts.                             |
+| Token Contract                 | Ethereum (Solidity) | Manage platform tokens for rewards and transactions.                                          |
+| Reward Distribution Contract   | Ethereum (Solidity) | Incentivize users for completing tasks (can merge with token contract).                       |
+| Trade Execution Contract       | Ethereum (Solidity) | Record trade details and ensure transparency.                                                 |
+| Virtual Balance Contract       | Ethereum (Solidity) | Manage virtual balances for trade admins and sub-accounts.                                    |
+| Data Protection Contract       | iExec (Off-chain)   | Store encrypted data references and enable secure communication via iExec.                    |
+| Workflow Management Contract   | StarkNet (Cairo)    | Facilitates task orchestration and manages AI-driven or user-driven workflows through Citrea. |
+| Wallet Compatibility Contracts | Ethereum, StarkNet  | Support MetaMask and StarkNet Argent wallets for decentralized transactions.                  |
 
 ---
 
