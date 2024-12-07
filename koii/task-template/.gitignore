@@ -1,0 +1,17 @@
+dist
+build
+node_modules
+package-lock.json
+yarn.lock
+migrate.sh
+*/dev.js
+data/*
+executables/*
+namespace/*
+config/*
+.env.local
+.env
+taskStateInfoKeypair.json
+localKOIIDB.db
+metadata.json
+.npmrc

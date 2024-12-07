@@ -1,0 +1,121 @@
+######################## ALL FIELDS ARE REQUIRED UNLESS OTHERWISE NOTED #########################
+
+######################################### TASK METADATA #########################################
+############################ Will be displayed in the desktop node ##############################
+
+## Task Name ##
+# Maximum 24 characters.
+task_name: "Future of Blockchain Pulse Trade Task"
+
+## Task Author ##
+author: "Patrick Kish"
+
+# Task Description Markdown ##
+# If you specify a markdown file, the description field will be ignored.
+# Markdown is recommended for better formatting.
+markdownDescriptionPath: "./TaskDescription.md"
+
+## Task Description ##
+# Ignored if you specify a markdown file.
+description: "Task description."
+
+## Repository URL ##
+# Must be public for whitelisted tasks.
+repositoryUrl: "https://github.com/PatrickKish1/pulsetrade"
+
+## Image URL ##
+# 230x86 pixels.
+imageUrl: "imageUrl"
+
+## Info URL ##
+infoUrl: "infoUrl"
+
+####################################### TASK CONFIGURATION ######################################
+
+## Task Executable Network ##
+# IPFS or DEVELOPMENT
+# Keep this as IPFS unless you know you need to change it.
+task_executable_network: "IPFS"
+
+## Task Audit Program ##
+# Task Executable Network IPFS: Path to your executable.
+# Task Executable Network DEVELOPMENT: The value should be 'main'.
+# Keep this as-is unless you know you need to change it.
+task_audit_program: "dist/main.js"
+
+## Round Time ##
+# Duration of task, measured in slots (with each slot approximately equal to 408ms). Should be at least 800 slots.
+# See https://www.koii.network/docs/concepts/what-are-tasks/what-are-tasks/gradual-consensus for more information on how round time, audit window, and submission window work.
+round_time: 1500
+
+## Audit Window ##
+# The audit window should be at least 1/3 of the round time.
+audit_window: 600
+
+## Submission Window ##
+# The submission window should be at least 1/3 of the round time.
+submission_window: 600
+
+## Minimum Stake Amount ##
+# The minimum amount of KOII that a user must stake in order to participate in the task.
+minimum_stake_amount: 0.1
+
+## Task Bounty Type ##
+# KOII or KPL
+task_type: "KPL"
+
+## Token Mint Address (ONLY for KPL tasks) ##
+# The Fire Token address is provided as an example.
+token_type: "2Q1yyiMjTE4d4Qwb4Fs8FGm5KGfx18z8JbtkweLhXDcw"
+
+## Total Bounty Amount ##
+# The total bounty amount that will be available for distribution over all rounds.
+# Does nothing when updating a task.
+total_bounty_amount: 10
+
+## Bounty Amount per Round ##
+# The maximum amount that can be distributed per round.
+# If the actual distribution per round exceeds this amount, the distribution list will fail.
+bounty_amount_per_round: 0.1
+
+## Allowed Failed Distributions ##
+# Number of retries allowed for the distribution list if it is fails audit.
+# If all retries fail, the task will not distribute anything for the round.
+# This is also the number of rounds of submissions it will keep.
+allowed_failed_distributions: 3
+
+## Space ##
+# Expected Task Data Size in MBs for the account size.
+# Minimums: 2 for whitelisted tasks, 1 for production, 0.1 for testing.
+# See https://www.koii.network/docs/develop/command-line-tool/create-task-cli/create-task#space for calculation details.
+space: 0.1
+
+## Requirement Tags (Optional) ##
+# To add more global variables and task variables, please refer to the type, value, description format shown below.
+requirementsTags:
+  - type: CPU
+    value: "4-core"
+  - type: RAM
+    value: "5 GB"
+  - type: STORAGE
+    value: "5 GB"
+  - type: TASK_VARIABLE
+    value: "TEST_VARIABLE"
+    description: "An example to demonstrate the use of task variables."
+
+## Tags ##
+# See https://www.koii.network/docs/develop/command-line-tool/create-task-cli/create-task#tags for available tag options.
+tags: ["Future of Blockchain"]
+
+# Environment ##
+# TEST or PRODUCTION
+# Production mode will expose your task to all the task runners, even if not whitelisted.
+environment: "TEST"
+
+#################################### FOR UPDATING TASKS ONLY ####################################
+
+## Old Task ID ##
+task_id: ""
+
+## Migration Description ##
+migrationDescription: ""
