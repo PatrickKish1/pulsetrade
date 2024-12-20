@@ -1,0 +1,36 @@
+{
+    "name": "trading-chat-api",
+    "version": "1.0.0",
+    "description": "Trading Chat API powered by Groq",
+    "main": "server.js",
+    "scripts": {
+        "start": "node server.js",
+        "dev": "nodemon server.js"
+    },
+    "dependencies": {
+        "@langchain/core": "^0.3.23",
+        "@langchain/groq": "^0.1.2",
+        "@langchain/langgraph": "^0.2.33",
+        "axios": "^1.6.2",
+        "ccxt": "^4.4.40",
+        "cors": "^2.8.5",
+        "dotenv": "^16.4.7",
+        "express": "^4.21.2",
+        "express-rate-limit": "^7.5.0",
+        "express-validator": "^7.2.0",
+        "groq-sdk": "^0.3.3",
+        "http-errors": "^2.0.0",
+        "ioredis": "^5.4.1",
+        "limiter": "^2.1.0",
+        "node-cache": "^5.1.2",
+        "rate-limit-redis": "^4.2.0",
+        "uuid": "^11.0.3",
+        "yahoo-finance2": "^2.13.2"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.22"
+    },
+    "engines": {
+        "node": ">=18.0.0"
+    }
+}

@@ -1,29 +1,45 @@
-import { exec } from 'child_process';
-import { promisify } from 'util';
+import { spawn } from 'child_process';
 import path from 'path';
-
-const execAsync = promisify(exec);
 
 /**
  * Executes the Python script and returns its output
  * @returns {Promise<string>} The output from the Python script
  */
-export async function runPythonScript() {
-    try {
+export function runPythonScript() {
+    return new Promise((resolve, reject) => {
         // Get the absolute path to the Python script
-        const scriptPath = path.join(process.cwd(), 'main.py');
+        const scriptPath = path.resolve(process.cwd(), 'main.py');
         
-        // Execute the Python script
-        const { stdout, stderr } = await execAsync(`python ${scriptPath}`);
-        
-        if (stderr) {
-            console.error('Python script error:', stderr);
-            throw new Error(stderr);
-        }
-        
-        return stdout.trim();
-    } catch (error) {
-        console.error('Error running Python script:', error);
-        throw error;
-    }
+        // Spawn the Python process
+        const pythonProcess = spawn('python', [scriptPath]);
+
+        let output = '';
+        let errorOutput = '';
+
+        // Collect standard output
+        pythonProcess.stdout.on('data', (data) => {
+            output += data.toString();
+        });
+
+        // Collect standard error
+        pythonProcess.stderr.on('data', (data) => {
+            errorOutput += data.toString();
+        });
+
+        // Handle process completion
+        pythonProcess.on('close', (code) => {
+            if (code === 0) {
+                resolve(output.trim());
+            } else {
+                reject(new Error(`Python script exited with code ${code}: ${errorOutput.trim()}`));
+            }
+        });
+
+        // Handle process errors
+        pythonProcess.on('error', (err) => {
+            reject(new Error(`Failed to start Python process: ${err.message}`));
+        });
+    });
 }
+
+export default runPythonScript;

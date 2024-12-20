@@ -5,7 +5,7 @@
 
 ## Task Name ##
 # Maximum 24 characters.
-task_name: "Future of Blockchain Pulse Trade Task"
+task_name: "FutureOfBlockchain kPST"
 
 ## Task Author ##
 author: "Patrick Kish"
@@ -96,16 +96,13 @@ requirementsTags:
   - type: CPU
     value: "4-core"
   - type: RAM
-    value: "5 GB"
+    value: "2 GB"
   - type: STORAGE
     value: "5 GB"
-  - type: TASK_VARIABLE
-    value: "TEST_VARIABLE"
-    description: "An example to demonstrate the use of task variables."
 
 ## Tags ##
 # See https://www.koii.network/docs/develop/command-line-tool/create-task-cli/create-task#tags for available tag options.
-tags: ["Future of Blockchain"]
+tags: ["FutureofBlockchain kPST"]
 
 # Environment ##
 # TEST or PRODUCTION

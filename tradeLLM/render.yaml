@@ -1,0 +1,18 @@
+# render.yaml
+services:
+  - type: web
+    name: tradellm-api
+    env: node
+    buildCommand: npm install
+    startCommand: node server.js
+    envVars:
+      - key: PORT
+        value: 3000
+      - key: NODE_ENV
+        value: production
+      - key: GROQ_API_KEY
+        sync: false # This will be added manually in Render dashboard
+      - key: POLYGON_API_KEY
+        sync: false # This will be added manually in Render dashboard
+    healthCheckPath: /health
+    autoDeploy: true

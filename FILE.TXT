@@ -1,9 +1,0 @@
-Link to your new token. = 2Q1yyiMjTE4d4Qwb4Fs8FGm5KGfx18z8JbtkweLhXDcw
-
-MINT ADDRESS = 2Q1yyiMjTE4d4Qwb4Fs8FGm5KGfx18z8JbtkweLhXDcw
-
-
-You have minted 10000 tokens to your associated account AjecEiHoXtLBVnmeZax9UQxA86DsCtmntf7EigaU1jr8 with a signature of JfnbLWDW8MVwSnyxb3GxwD1iR1MVGWH5qr4mmdDRrZeGH3g52SAEw1tWPWPe9ztDfAPguwqg4kDa7jh4MNd1RyX.
-
-Associated Account: AjecEiHoXtLBVnmeZax9UQxA86DsCtmntf7EigaU1jr8
-Token Update: 2Q1yyiMjTE4d4Qwb4Fs8FGm5KGfx18z8JbtkweLhXDcw

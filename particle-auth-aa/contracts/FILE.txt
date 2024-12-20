@@ -1,0 +1,7 @@
+PULSE TRADE DEPLOYED ON CITREA
+status	0x1 Transaction mined and execution succeed
+transaction hash	0x6b0675375172e93d93a2febf9e0c42ad017cf60c211c7a4cac370f2001afe678
+block hash	0xc30f5ca54e66f2073a492eb337ec842b58e6698927697054c334b739e28bb29c
+block number	3904461
+contract address	0xe8da3071c06445ca26475f0fa1161ee5e8956929
+from	0xf171b553fe688c45d7dc9eeefe00709fc47b5a69

@@ -1,5 +1,5 @@
 import { namespaceWrapper } from "@_koii/namespace-wrapper";
-import { runPythonScript } from "./helloPy.js";
+import runPythonScript from "./helloPy.js";
 
 export async function task(roundNumber) {
     /**
@@ -11,6 +11,7 @@ export async function task(roundNumber) {
         
         // Run the Python script and get its output
         const pythonOutput = await runPythonScript();
+        console.log(pythonOutput)
         
         // Store the output for submission
         await namespaceWrapper.storeSet("pythonOutput", pythonOutput);
