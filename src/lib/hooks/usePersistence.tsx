@@ -2,9 +2,9 @@
 
 import React from 'react';
 import { useAccount } from '@particle-network/connectkit';
-import { ParticleConnectkit } from '@/lib/connectkit';
 import { create } from 'zustand';
 import { persist } from 'zustand/middleware';
+import { ParticleConnectkit } from '../connectkit';
 
 // Define the wallet state interface
 interface WalletState {

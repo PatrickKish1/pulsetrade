@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@ant-design/icons": "^5.5.2",
     "@iexec/dataprotector": "^2.0.0-beta.10",
     "@iexec/web3mail": "^1.1.1",
     "@particle-network/aa": "^1.5.1",

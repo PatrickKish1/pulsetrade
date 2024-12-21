@@ -7,9 +7,9 @@ import { Button } from '@/components/ui/button';
 import Image from 'next/image';
 import { useRouter } from 'next/navigation';
 import { addDoc, collection, updateDoc, doc } from 'firebase/firestore';
-import { db } from '../../../firebase.config';
 import { useParticleAuth } from '@/lib/hooks/useParticleAuth';
 import { AIMessage, AIChat, TradeValues, AIResponse } from '@/lib/utils';
+import { db } from '../../../firebase.config';
 
 // Flexible instructions that can be easily updated
 const chatInstructions = [
