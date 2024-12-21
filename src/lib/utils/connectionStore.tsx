@@ -1,7 +1,7 @@
 'use client';
 import React, { useEffect } from 'react';
 import { useAccount } from '@particle-network/connectkit';
-import { useWalletStore } from '../utils/connectionStore';
+
 export const WalletPersistenceProvider = ({ 
   children 
 }: { 
@@ -28,7 +28,7 @@ interface WalletState {
   setWalletConnected: (connected: boolean) => void;
   setWalletAddress: (address: string) => void;
 }
-export const useWalletStore = create<WalletState>()(
+const useWalletStore = create<WalletState>()(
   persist(
     (set) => ({
       isWalletConnected: false,
@@ -41,3 +41,5 @@ export const useWalletStore = create<WalletState>()(
     }
   )
 );
+
+export default {useWalletStore};
