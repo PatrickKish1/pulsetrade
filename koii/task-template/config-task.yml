@@ -5,10 +5,10 @@
 
 ## Task Name ##
 # Maximum 24 characters.
-task_name: "FutureOfBlockchain kPST"
+task_name: "Future Of Blocakchain"
 
 ## Task Author ##
-author: "Patrick Kish"
+author: "GrimmJaw"
 
 # Task Description Markdown ##
 # If you specify a markdown file, the description field will be ignored.
@@ -96,13 +96,13 @@ requirementsTags:
   - type: CPU
     value: "4-core"
   - type: RAM
-    value: "2 GB"
+    value: "5 GB"
   - type: STORAGE
     value: "5 GB"
 
 ## Tags ##
 # See https://www.koii.network/docs/develop/command-line-tool/create-task-cli/create-task#tags for available tag options.
-tags: ["FutureofBlockchain kPST"]
+tags: ["Future of Blockchain"]
 
 # Environment ##
 # TEST or PRODUCTION

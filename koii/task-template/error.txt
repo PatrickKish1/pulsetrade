@@ -1,0 +1,33 @@
+error C:\Users\patri\Desktop\HACKERTHON\task-template\node_modules\@tensorflow\tfjs-node: Command failed.
+Exit code: 1
+Command: node scripts/install.js
+Arguments:
+Directory: C:\Users\patri\Desktop\HACKERTHON\task-template\node_modules\@tensorflow\tfjs-node
+Output:
+CPU-windows-4.22.0.zip
+* Downloading libtensorflow
+https://storage.googleapis.com/tensorflow/libtensorflow/libtensorflow-cpu-windows-x86_64-2.9.1.zip
+
+* Building TensorFlow Node.js bindings
+node-pre-gyp install failed with error: Error: Command failed: node-pre-gyp install --fallback-to-build
+node-pre-gyp info it worked if it ends with ok
+node-pre-gyp info using node-pre-gyp@1.0.9
+node-pre-gyp info using node@22.7.0 | win32 | x64
+(node:29192) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+node-pre-gyp info check checked for "C:\Users\patri\Desktop\HACKERTHON\task-template\node_modules\@tensorflow\tfjs-node\lib\napi-v8\tfjs_binding.node" (not found)
+node-pre-gyp http GET https://storage.googleapis.com/tf-builds/pre-built-binary/napi-v8/4.22.0/CPU-windows-4.22.0.zip  
+node-pre-gyp ERR! install response status 404 Not Found on https://storage.googleapis.com/tf-builds/pre-built-binary/napi-v8/4.22.0/CPU-windows-4.22.0.zip
+node-pre-gyp WARN Pre-built binaries not installable for @tensorflow/tfjs-node@4.22.0 and node@22.7.0 (node-v127 ABI, unknown) (falling back to source compile with node-gyp)
+node-pre-gyp WARN Hit error response status 404 Not Found on https://storage.googleapis.com/tf-builds/pre-built-binary/napi-v8/4.22.0/CPU-windows-4.22.0.zip
+node-pre-gyp ERR! UNCAUGHT EXCEPTION
+node-pre-gyp ERR! stack Error: spawn EINVAL
+node-pre-gyp ERR! stack     at ChildProcess.spawn (node:internal/child_process:421:11)
+node-pre-gyp ERR! stack     at Object.spawn (node:child_process:761:9)
+node-pre-gyp ERR! stack     at module.exports.run_gyp (C:\Users\patri\Desktop\HACKERTHON\task-template\node_modules\@mapbox\node-pre-gyp\lib\util\compile.js:80:18)
+node-pre-gyp ERR! stack     at build (C:\Users\patri\Desktop\HACKERTHON\task-template\node_modules\@mapbox\node-pre-gyp\lib\build.js:41:13)
+node-pre-gyp ERR! stack     at self.commands.<computed> [as build] (C:\Users\patri\Desktop\HACKERTHON\task-template\node_modules\@mapbox\node-pre-gyp\lib\node-pre-gyp.js:86:37)
+node-pre-gyp ERR! stack     at run (C:\Users\patri\Desktop\HACKERTHON\task-template\node_modules\@mapbox\node-pre-gyp\lib\main.js:81:30)
+node-pre-gyp ERR! stack     at process.processTicksAndRejections (node:internal/process/task_queues:85:11)
+node-pre-gyp ERR! System Windows_NT 10.0.26100
+node-pre-gyp ERR! command "C:\\Program Files\\nodejs\\node.exe" "C:\\Users\\patri\\Desktop\\HACKERTHON\\task-template\\node_modules\\@mapbox\\node-pre-gyp\\bin\\node-pre-gyp" "install" "--fallback-to-build"

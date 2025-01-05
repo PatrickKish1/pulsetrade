@@ -1,11 +1,12 @@
 {
-  "name": "koii-task-template",
+  "name": "pulsetrade",
   "version": "3.0.0",
   "description": "",
   "main": "src/index.js",
   "type": "module",
   "scripts": {
-    "test": "node tests/simulateTask.js",
+    "test": "node tests/testTask.js",
+    "simulate": "node tests/simulateTask.js",
     "jest-test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
     "start": "node index.js",
     "prod-debug": "nodemon --ignore 'dist/*' tests/prod-debug.js",
@@ -15,7 +16,7 @@
     "lint": "eslint . --fix",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,css,md}\""
   },
-  "author": "",
+  "author": "patrickkish",
   "license": "ISC",
   "dependencies": {
     "@_koii/namespace-wrapper": "^1.0.14",
@@ -24,11 +25,16 @@
     "@babel/preset-env": "^7.25.7",
     "axios": "^1.7.7",
     "babel-jest": "^29.7.0",
+    "brain.js": "^2.0.0-beta.24",
     "chalk": "^5.3.0",
     "cross-spawn": "^7.0.3",
+    "d3": "^7.9.0",
     "dotenv": "^16.3.0",
     "dotenv-webpack": "^8.1.0",
+    "gpu.js": "^2.16.0",
     "nodemon": "^3.1.7",
+    "onnxjs": "^0.1.8",
+    "onnxruntime-node": "^1.20.1",
     "tail": "^2.2.6"
   },
   "devDependencies": {
