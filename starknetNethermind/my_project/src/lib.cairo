@@ -1,5 +1,6 @@
 use starknet::ContractAddress;
 
+
 #[starknet::interface]
 trait IIdentityManager<TContractState> {
     fn register_identity(ref self: TContractState, credentials: felt252, proof: felt252) -> bool;
@@ -63,13 +64,14 @@ struct AdminStats {
 
 #[starknet::contract]
 mod PulseTrade {
+    use starknet::storage::StorageMapReadAccess;
+    use starknet::storage::StorageMapWriteAccess;
+    use starknet::storage::StoragePointerWriteAccess;
     use starknet::storage::StoragePointerReadAccess;
     use core::starknet::event::EventEmitter;
     use starknet::{ContractAddress, get_caller_address, get_block_timestamp};
-    use super::{
-        IIdentityManager, IGovernance, TradeParams, PlatformStats, AdminStats, ContractAddress,
-    };
-    use starknet::storage::{StorageMap, StorageMapRead, StorageMapWrite};
+    use super::{IIdentityManager, IGovernance, TradeParams, PlatformStats, AdminStats};
+    use starknet::storage::{Map};
 
     #[storage]
     struct Storage {
@@ -152,7 +154,7 @@ mod PulseTrade {
             assert(self.initialized.read(), 'Platform not initialized');
             let caller = get_caller_address();
 
-            let identity_manager = IIdentityManager::unsafe_new_contract_state(
+            let mut identity_manager = IIdentityManager::unsafe_new_contract_state(
                 self.identity_manager.read(),
             );
             assert(
@@ -174,7 +176,7 @@ mod PulseTrade {
             assert(self.initialized.read(), 'Platform not initialized');
             let caller = get_caller_address();
 
-            let governance = IGovernance::unsafe_new_contract_state(self.governance.read());
+            let mut governance = IGovernance::unsafe_new_contract_state(self.governance.read());
             assert(governance.check_admin_status(admin) == 0, 'Admin not in good standing');
 
             self.user_admins.write((caller, admin), true);
@@ -553,4 +555,5 @@ mod PulseTrade {
 //         }
 //     }
 // }
+
 
