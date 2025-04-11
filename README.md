@@ -1,226 +1,133 @@
-# AI-Powered Trading Platform
+# PulseTrade: AI-Powered Web3 Trading Platform
 
-Welcome to the **AI-Powered Trading Platform** repository! This platform combines cutting-edge AI capabilities, blockchain technology, and seamless integration to deliver a state-of-the-art trading experience. It is designed to empower both individual traders and trade administrators to maximize profits, manage accounts efficiently, and execute trades with real-time intelligence.
+![PulseTrade Logo](public/pulsetrade.png)
 
----
+## 🚀 Project Overview
 
-## Key Features
+PulseTrade is an innovative web3 trading platform that leverages AI and blockchain technologies to provide advanced trading capabilities, AI chat assistance, and decentralized financial services.
 
-1. **AI-Driven Trading Assistance**
+### Key Features
+- 🤖 AI-Powered Trading Assistant
+- 💱 Multi-Blockchain Trading Support
+- 🔒 Secure Web3 Authentication
+- 📊 Advanced Trading Dashboard
+- 💬 Real-time AI Trading Chat
+- 🌐 Decentralized Data Protection
 
-   - Automated trade execution with real-time decision-making.
-   - Trade signal generation for manual approval or autonomous operation.
-   - Configurable AI settings for risk tolerance and trade size.
-   - Portfolio management with AI-based suggestions for diversification and optimization.
-   - Trade signal suggestions based on technical, fundamental, and sentiment analysis.
-   - Updates on market news and trends across stocks, forex, and crypto assets.
-
-2. **Trade Admin Features**
-
-   - Sub-account management with virtual balances to prevent direct fund access.
-   - Profit-sharing mechanisms with blockchain-based smart contracts.
-   - Aggregated portfolio views for all managed accounts.
-   - AI-assisted sub-account trading and management.
-
-3. **User Types**
-
-   - **Regular Users**: Beginner, intermediate, and pro traders leveraging AI and platform tools for trading.
-   - **Trade Admins**: Manage sub-accounts, use AI to optimize multiple portfolios, and earn profit shares.
-
-4. **Blockchain Integration**
-
-   - Smart contracts for profit sharing and virtual balance management.
-   - Decentralized wallet connectivity with support for MetaMask and StarkNet's Argent Wallet.
-
-5. **Rich Analytics and Reporting**
-
-   - Performance insights with charts and metrics.
-   - Comparative analysis of AI-driven vs. manual trades.
-
-6. **Learning and Rewards**
-   - Tutorials for beginner traders as Koii tasks, rewarding users with platform tokens upon completion.
-   - Tokens created on Koii are used to incentivize engagement and learning.
-
----
-
-## Technologies Used
-
-### **Core Technologies**
-
-- **Particle**: Ensures seamless interaction with blockchain networks for executing trades and smart contract functionalities.
-- **iExec**: Provides decentralized computing power for AI model execution, data sharing, and secure data access through Data Protectors and Web3Mail.
-- **Spectral**: Enhances risk assessment by analyzing user creditworthiness for trading decisions.
-- **Citrea**: Manages complex workflows, ensuring AI and user actions are synchronized effectively.
-- **Koii**: Facilitates decentralized content validation and distribution for learning modules and rewards with platform tokens.
-- **StarkNet**: Offers scalable and secure Layer 2 solutions for faster blockchain interactions, supporting smart contracts for specific services like profit sharing.
-
-### **Frontend**
-
-- **Next.js**: For building a responsive and dynamic user interface.
-- **Chart.js**: For visualizing trade data and performance metrics.
-- **Tailwind CSS**: For a consistent and modern design system.
-
-### **Backend**
-
-- **Node.js**: Provides APIs for communication between the frontend and services.
-- **Express.js**: Powers the RESTful API endpoints.
-- **WebSockets**: For real-time notifications and updates.
-
-### **AI Engine**
-
-- **Open Source LLMs**:
-  - **GPT-J**: Handles natural language understanding for sentiment analysis and trade-related news. It analyzes market trends, social media sentiments, and financial news to influence trading decisions.
-  - **Falcon**: Focuses on technical data analysis and trade signal generation. It processes technical indicators like moving averages, RSI, and MACD to create actionable trade signals.
-  - **LLaMA**: Synthesizes technical, fundamental, and sentiment data to generate a final trade recommendation. This model integrates inputs from both Falcon’s technical analysis and GPT-J’s sentiment insights for holistic decision-making.
-- **AI Functionality**:
-  - Technical analysis of trading indicators (e.g., RSI, MACD, moving averages).
-  - Fundamental analysis, including earnings reports and economic data.
-  - Sentiment analysis using news and social media trends.
-  - Dynamic trade signal generation tailored to user profiles (e.g., beginner, intermediate, pro).
-
-### **Blockchain**
-
-- **Ethereum/Polygon**: For deploying general smart contracts that handle profit sharing and virtual balances.
-- **StarkNet**: Used specifically for faster, secure Layer 2 smart contracts, including those for trust agreements and trade-related services.
-- **Web3.js**: Facilitates interactions between the app and blockchain networks.
-- **Wallet Integration**:
-  - **MetaMask**: Standard wallet for Ethereum-based interactions.
-  - **Argent Wallet**: A StarkNet-compatible wallet for decentralized transactions, providing an additional layer of scalability and security for StarkNet-based interactions.
-
-### **Database**
-
-- **PostgreSQL**: For storing user data, trade history, and performance metrics.
-- **Redis**: For caching frequently accessed data, such as live trade signals.
-
-### **DevOps and Deployment**
-
-- **Docker**: For containerizing application components.
-- **Kubernetes**: For orchestrating containers in a scalable way.
-- **AWS/GCP**: Cloud hosting for frontend, backend, and AI services.
-
----
-
-## System Architecture
-
-### **Workflow Overview**
-
-1. **User Registration & Onboarding**:
-   - Users create accounts, configure AI settings, and link wallets (MetaMask/Argent).
-2. **AI-Driven Operations**:
-
-   - AI analyzes market data and generates trade signals.
-   - Signals are sent to users for approval or executed autonomously.
-
-3. **Trade Execution**:
-
-   - Trades initiated by AI or users are executed via integrated APIs and reflected on the platform dashboard.
-
-4. **Profit Sharing**:
-
-   - Smart contracts ensure automatic profit distribution between trade admins and sub-accounts.
-   - Virtual balances are updated after each trade.
-
-5. **Analytics & Reporting**:
-
-   - Users view performance metrics, trade history, and profit/loss reports.
-   - Admins monitor sub-account activities and overall portfolio performance.
-
-6. **Learning and Rewards**:
-   - Tutorials on Koii educate beginners about trading strategies.
-   - Completing tasks rewards users with platform tokens.
-
-### **Integration Overview**
-
-| Component      | Technology                                        | Functionality                                              |
-| -------------- | ------------------------------------------------- | ---------------------------------------------------------- |
-| **Frontend**   | Next.js, Chart.js                                 | User interface, dashboards, and data visualization.        |
-| **Backend**    | Node.js, Express                                  | API management, user authentication, and trade sync logic. |
-| **AI Engine**  | GPT-J, Falcon, LLaMA                              | Multi-LLM collaboration for trade insights and decisions.  |
-| **Blockchain** | Solidity, Web3.js                                 | Smart contracts for profit sharing and virtual balances.   |
-| **Database**   | PostgreSQL, Redis                                 | Persistent and cached data storage.                        |
-| **DevOps**     | Docker, Kubernetes                                | Scalable deployment and container orchestration.           |
-| **Core Tech**  | Particle, iExec, Spectral, Citrea, Koii, StarkNet | Decentralized workflows, risk assessment, and performance. |
-
----
-
----
-
-## Smart Contracts Overview
-
-The following table outlines the smart contracts required for the platform, their deployment platforms, and functionality:
-
-| **Contract Name**              | **Platform**        | **Purpose**                                                                                   |
-| ------------------------------ | ------------------- | --------------------------------------------------------------------------------------------- |
-| User Management Contract       | Ethereum (Solidity) | Manage users, roles, and wallet connections.                                                  |
-| Profit-Sharing Contract        | Ethereum (Solidity) | Handle profit distribution between trade admins and sub-accounts.                             |
-| Token Contract                 | Ethereum (Solidity) | Manage platform tokens for rewards and transactions.                                          |
-| Reward Distribution Contract   | Ethereum (Solidity) | Incentivize users for completing tasks (can merge with token contract).                       |
-| Trade Execution Contract       | Ethereum (Solidity) | Record trade details and ensure transparency.                                                 |
-| Virtual Balance Contract       | Ethereum (Solidity) | Manage virtual balances for trade admins and sub-accounts.                                    |
-| Data Protection Contract       | iExec (Off-chain)   | Store encrypted data references and enable secure communication via iExec.                    |
-| Workflow Management Contract   | StarkNet (Cairo)    | Facilitates task orchestration and manages AI-driven or user-driven workflows through Citrea. |
-| Wallet Compatibility Contracts | Ethereum, StarkNet  | Support MetaMask and StarkNet Argent wallets for decentralized transactions.                  |
-
----
-
-## Installation and Setup
+## 💻 Getting Started
 
 ### Prerequisites
+- Node.js (v18 or later)
+- npm (v9 or later)
 
-- **Node.js** (v14+)
-- **Python** (3.8+)
-- **Docker**
-- **MetaMask/Argent Wallet**
-
-### Local Development
+### Installation Steps
 
 1. Clone the repository:
-
-   ```bash
-   git clone https://github.com/yourusername/trading-platform.git
-   cd trading-platform
-   ```
+```bash
+git clone https://github.com/yourusername/pulsetrade.git
+cd pulsetrade
+```
 
 2. Install dependencies:
+```bash
+npm install
+```
 
-   ```bash
-   npm install
-   cd ai-engine && pip install -r requirements.txt
-   ```
+3. Create a `.env` file with the following variables:
+```env
+NEXT_PUBLIC_PARTICLE_APP_ID=your_particle_app_id
+NEXT_PUBLIC_PARTICLE_CLIENT_KEY=your_particle_client_key
+NEXT_PUBLIC_FIREBASE_CONFIG=your_firebase_config_json
+```
 
-3. Start the services:
+4. Start the development server:
+```bash
+npm run dev
+```
 
-   - **Frontend**:
-     ```bash
-     npm run start
-     ```
-   - **Backend**:
-     ```bash
-     npm run server
-     ```
-   - **AI Engine**:
-     ```bash
-     cd ai-engine && uvicorn main:app --reload
-     ```
+The application will be available at `http://localhost:3000`
 
-4. Configure MT5 API and Blockchain network:
+## 🚀 Deployment
 
-   - Update `.env` with API keys and smart contract addresses.
+### Production Build
+```bash
+npm run build
+npm start
+```
 
-5. Access the platform at `http://localhost:3000`.
+### Deploy to GitHub Pages
+```bash
+npm run deploy
+```
 
----
+## 📂 Project Structure
+```
+├── public/           # Static assets
+├── src/
+│   ├── app/          # Next.js page routes
+│   ├── components/   # Reusable React components
+│   ├── lib/          # Utility functions, hooks, services
+│   └── styles/       # Global styles
+├── contracts/        # Smart contract definitions
+└── config/           # Configuration files
+```
 
-## Contributing
+## 🔧 Technologies Used
 
-We welcome contributions! Please follow the standard GitHub workflow:
+### Frontend
+- Next.js 14
+- React 18
+- TypeScript
+- Tailwind CSS
 
-1. Fork the repository.
-2. Create a new feature branch.
-3. Submit a pull request with detailed notes on the changes.
+### Web3 & Blockchain
+- Ethers.js
+- Starknet.js
+- Particle Network Auth
+- Web3.js
 
----
+### AI & Services
+- OpenAI / Groq AI
+- Firebase
+- iExec Data Protection
 
-## License
+### Authentication
+- Particle Network
+- Web3 Wallet Integrations
 
-This project is licensed under the MIT License. See the LICENSE file for details.
+## 🌟 Feature Highlights
+
+### AI Trading Chat
+- Real-time trading insights
+- Market trend analysis
+- Personalized trading recommendations
+
+### Multi-Chain Support
+- Ethereum trading
+- Starknet integration
+- Cross-chain capabilities
+
+### Secure Authentication
+- Web3 wallet connections
+- Decentralized identity management
+- Privacy-focused authentication
+
+## 🔧 Configuration
+
+The application can be configured via:
+- `.env` file for environment-specific settings
+- `next.config.mjs` for Next.js configurations
+- `tailwind.config.ts` for styling customizations
+
+## 📄 License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## 🤝 Contributing
+
+Contributions are welcome! Please read our contributing guidelines before getting started.
+
+## 📬 Contact
+
+- Project Maintainer: [@patrickkish1](https://github.com/patrickkish1)
+- Project Link: [https://github.com/patrickkish1/pulsetrade](https://github.com/patrickkish1/pulsetrade)
