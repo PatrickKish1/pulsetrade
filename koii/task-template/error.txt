@@ -1,33 +1,123 @@
-error C:\Users\patri\Desktop\HACKERTHON\task-template\node_modules\@tensorflow\tfjs-node: Command failed.
-Exit code: 1
-Command: node scripts/install.js
-Arguments:
-Directory: C:\Users\patri\Desktop\HACKERTHON\task-template\node_modules\@tensorflow\tfjs-node
-Output:
-CPU-windows-4.22.0.zip
-* Downloading libtensorflow
-https://storage.googleapis.com/tensorflow/libtensorflow/libtensorflow-cpu-windows-x86_64-2.9.1.zip
-
-* Building TensorFlow Node.js bindings
-node-pre-gyp install failed with error: Error: Command failed: node-pre-gyp install --fallback-to-build
-node-pre-gyp info it worked if it ends with ok
-node-pre-gyp info using node-pre-gyp@1.0.9
-node-pre-gyp info using node@22.7.0 | win32 | x64
-(node:29192) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+[nodemon] restarting due to changes...
+[nodemon] restarting due to changes...
+[nodemon] starting `node tests/prod-debug.js`
+Watching for file changes...
+Building...
+(node:21256) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
 (Use `node --trace-deprecation ...` to show where the warning was created)
-node-pre-gyp info check checked for "C:\Users\patri\Desktop\HACKERTHON\task-template\node_modules\@tensorflow\tfjs-node\lib\napi-v8\tfjs_binding.node" (not found)
-node-pre-gyp http GET https://storage.googleapis.com/tf-builds/pre-built-binary/napi-v8/4.22.0/CPU-windows-4.22.0.zip  
-node-pre-gyp ERR! install response status 404 Not Found on https://storage.googleapis.com/tf-builds/pre-built-binary/napi-v8/4.22.0/CPU-windows-4.22.0.zip
-node-pre-gyp WARN Pre-built binaries not installable for @tensorflow/tfjs-node@4.22.0 and node@22.7.0 (node-v127 ABI, unknown) (falling back to source compile with node-gyp)
-node-pre-gyp WARN Hit error response status 404 Not Found on https://storage.googleapis.com/tf-builds/pre-built-binary/napi-v8/4.22.0/CPU-windows-4.22.0.zip
-node-pre-gyp ERR! UNCAUGHT EXCEPTION
-node-pre-gyp ERR! stack Error: spawn EINVAL
-node-pre-gyp ERR! stack     at ChildProcess.spawn (node:internal/child_process:421:11)
-node-pre-gyp ERR! stack     at Object.spawn (node:child_process:761:9)
-node-pre-gyp ERR! stack     at module.exports.run_gyp (C:\Users\patri\Desktop\HACKERTHON\task-template\node_modules\@mapbox\node-pre-gyp\lib\util\compile.js:80:18)
-node-pre-gyp ERR! stack     at build (C:\Users\patri\Desktop\HACKERTHON\task-template\node_modules\@mapbox\node-pre-gyp\lib\build.js:41:13)
-node-pre-gyp ERR! stack     at self.commands.<computed> [as build] (C:\Users\patri\Desktop\HACKERTHON\task-template\node_modules\@mapbox\node-pre-gyp\lib\node-pre-gyp.js:86:37)
-node-pre-gyp ERR! stack     at run (C:\Users\patri\Desktop\HACKERTHON\task-template\node_modules\@mapbox\node-pre-gyp\lib\main.js:81:30)
-node-pre-gyp ERR! stack     at process.processTicksAndRejections (node:internal/process/task_queues:85:11)
-node-pre-gyp ERR! System Windows_NT 10.0.26100
-node-pre-gyp ERR! command "C:\\Program Files\\nodejs\\node.exe" "C:\\Users\\patri\\Desktop\\HACKERTHON\\task-template\\node_modules\\@mapbox\\node-pre-gyp\\bin\\node-pre-gyp" "install" "--fallback-to-build"
+
+> pulsetrade@3.0.0 webpack:test
+> webpack --config tests/test.webpack.config.js
+
+assets by chunk 840 KiB (id hint: vendors)
+  asset vendors-node_modules_aws-sdk_core_dist-es_submodules_client_emitWarningIfUnsupportedVersion_j-e8f99a.js 371 KiB [compared for emit] (id hint: vendors) 1 related asset
+  asset vendors-node_modules_aws-sdk_client-sts_dist-es_STSClient_js-node_modules_aws-sdk_client-sts_-cd0d81.js 162 KiB [compared for emit] (id hint: vendors) 1 related asset
+  asset vendors-node_modules_aws-sdk_client-sso-oidc_dist-es_index_js.js 102 KiB [compared for emit] (id hint: vendors) 1 related asset
+  asset vendors-node_modules_aws-sdk_credential-provider-cognito-identity_dist-es_loadCognitoIdentity_js.js 94.1 KiB [compared for emit] (id hint: vendors) 1 related asset
+  asset vendors-node_modules_aws-sdk_credential-provider-sso_dist-es_loadSso_js.js 60 KiB [compared for emit] (id hint: vendors) 1 related asset
+  asset vendors-node_modules_aws-sdk_client-sts_dist-es_index_js.js 50.3 KiB [compared for emit] (id hint: vendors) 1 related asset
+asset main.js 6.72 MiB [compared for emit] (name: main) 1 related asset
+asset node_modules_aws-sdk_credential-providers_dist-es_loadSts_js.js 1.45 KiB [compared for emit] 1 related asset
+orphan modules 42.5 KiB [orphan] 67 modules
+runtime modules 4.51 KiB 10 modules
+cacheable modules 6.29 MiB
+  modules by path ./ 5.68 MiB
+    javascript modules 5.05 MiB 693 modules
+    json modules 652 KiB
+      modules by path ./node_modules/iconv-lite/ 86.7 KiB 8 modules
+      + 9 modules
+  modules by path ../../node_modules/ 622 KiB
+    modules by path ../../node_modules/@smithy/ 254 KiB 350 modules
+    modules by path ../../node_modules/@aws-sdk/ 298 KiB 189 modules
+    modules by path ../../node_modules/fast-xml-parser/src/ 62.4 KiB 11 modules
+    modules by path ../../node_modules/uuid/dist/esm-node/*.js 2.76 KiB 6 modules
+    ../../node_modules/strnum/strnum.js 4.7 KiB [built] [code generated]
++ 28 modules
+
+WARNING in ./node_modules/express/lib/view.js 81:13-25
+Critical dependency: the request of a dependency is an expression
+
+WARNING in ./node_modules/mongodb/lib/deps.js 31:19-38
+Module not found: Error: Can't resolve 'kerberos' in 'C:\Users\patri\Documents\INTERNSHIPS\pulsetrade\koii\task-template\node_modules\mongodb\lib'
+
+WARNING in ./node_modules/mongodb/lib/deps.js 42:20-47
+Module not found: Error: Can't resolve '@mongodb-js/zstd' in 'C:\Users\patri\Documents\INTERNSHIPS\pulsetrade\koii\task-template\node_modules\mongodb\lib'
+
+WARNING in ./node_modules/mongodb/lib/deps.js 65:35-58
+Module not found: Error: Can't resolve 'gcp-metadata' in 'C:\Users\patri\Documents\INTERNSHIPS\pulsetrade\koii\task-template\node_modules\mongodb\lib'
+
+WARNING in ./node_modules/mongodb/lib/deps.js 77:22-39
+Module not found: Error: Can't resolve 'snappy' in 'C:\Users\patri\Documents\INTERNSHIPS\pulsetrade\koii\task-template\node_modules\mongodb\lib'
+
+WARNING in ./node_modules/mongodb/lib/deps.js 102:15-30
+Module not found: Error: Can't resolve 'aws4' in 'C:\Users\patri\Documents\INTERNSHIPS\pulsetrade\koii\task-template\node_modules\mongodb\lib'
+
+WARNING in ./node_modules/mongodb/lib/deps.js 117:34-70
+Module not found: Error: Can't resolve 'mongodb-client-encryption' in 'C:\Users\patri\Documents\INTERNSHIPS\pulsetrade\koii\task-template\node_modules\mongodb\lib'
+
+7 warnings have detailed information that is not shown.
+Use 'stats.errorDetails: true' resp. '--stats-error-details' to show it.
+
+webpack 5.97.1 compiled with 7 warnings in 18278 ms
+Build successful
+8BAW1pquW6QpsC5aXvctgqMHqbSdvG1VujcPAZga31h doesn't contain any distribution list data
+Debugger.nodeDir C:\Users\patri\AppData\Roaming\KOII-Desktop-Node
+debugConfig {
+  webpackedFilePath: '../dist/main.js',
+  destinationPath: 'executables/null.js',
+  keywords: [ 'TEST', 'EZ TESTING' ],
+  logPath: 'namespace/8BAW1pquW6QpsC5aXvctgqMHqbSdvG1VujcPAZga31h/task.log',
+  nodeDir: 'C:\\Users\\patri\\AppData\\Roaming\\KOII-Desktop-Node',
+  taskID: '8BAW1pquW6QpsC5aXvctgqMHqbSdvG1VujcPAZga31h'
+}
+Copying webpacked file from C:\Users\patri\Documents\INTERNSHIPS\pulsetrade\koii\task-template\tests/../dist/main.js to C:\Users\patri\AppData\Roaming\KOII-Desktop-Node/executables/null.js...
+File copied successfully
+Watchings logs for messages containing  [ 'TEST', 'EZ TESTING' ]
+Now watching logs for messages containing TEST, EZ TESTING. Please start the task 8BAW1pquW6QpsC5aXvctgqMHqbSdvG1VujcPAZga31h and keep it running on the Desktop Node.
+[Mon, Mar 3, 2025, 2:05:23 PM] SETTING UP EXPRESS
+[Mon, Mar 3, 2025, 2:05:23 PM] ERROR: C:\Users\patri\AppData\Roaming\KOII-Desktop-Node\executables\bafybeibuzhjjokiepigzkrm4nmqwktjqi2kzycphvxftomasm6vfzpcjsm.js:21010
+  throw err;
+  ^
+
+Error: Could not locate the bindings file. Tried:
+ → C:\Users\patri\build\webgl.node
+ → C:\Users\patri\build\Debug\webgl.node
+ → C:\Users\patri\build\Release\webgl.node
+ → C:\Users\patri\out\Debug\webgl.node
+ → C:\Users\patri\Debug\webgl.node
+ → C:\Users\patri\out\Release\webgl.node
+ → C:\Users\patri\Release\webgl.node
+ → C:\Users\patri\build\default\webgl.node
+ → C:\Users\patri\compiled\18.12.1\win32\x64\webgl.node
+ → C:\Users\patri\addon-build\release\install-root\webgl.node
+ → C:\Users\patri\addon-build\debug\install-root\webgl.node
+ → C:\Users\patri\addon-build\default\install-root\webgl.node
+ → C:\Users\patri\lib\binding\node-v113-win32-x64\webgl.node
+    at bindings (C:\Users\patri\AppData\Roaming\KOII-Desktop-Node\executables\bafybeibuzhjjokiepigzkrm4nmqwktjqi2kzycphvxftomasm6vfzpcjsm.js:21001:9)
+    at ./node_modules/gl/src/javascript/native-gl.js (C:\Users\patri\AppData\Roaming\KOII-Desktop-Node\executables\bafybeibuzhjjokiepigzkrm4nmqwktjqi2kzycphvxftomasm6vfzpcjsm.js:59011:95)
+    at __webpack_require__ (C:\Users\patri\AppData\Roaming\KOII-Desktop-Node\executables\bafybeibuzhjjokiepigzkrm4nmqwktjqi2kzycphvxftomasm6vfzpcjsm.js:183785:42)
+    at ./node_modules/gl/src/javascript/webgl-rendering-context.js (C:\Users\patri\AppData\Roaming\KOII-Desktop-Node\executables\bafybeibuzhjjokiepigzkrm4nmqwktjqi2kzycphvxftomasm6vfzpcjsm.js:59705:58)
+    at __webpack_require__ (C:\Users\patri\AppData\Roaming\KOII-Desktop-Node\executables\bafybeibuzhjjokiepigzkrm4nmqwktjqi2kzycphvxftomasm6vfzpcjsm.js:183785:42)
+    at ./node_modules/gl/src/javascript/node-index.js (C:\Users\patri\AppData\Roaming\KOII-Desktop-Node\executables\bafybeibuzhjjokiepigzkrm4nmqwktjqi2kzycphvxftomasm6vfzpcjsm.js:59036:48)
+    at __webpack_require__ (C:\Users\patri\AppData\Roaming\KOII-Desktop-Node\executables\bafybeibuzhjjokiepigzkrm4nmqwktjqi2kzycphvxftomasm6vfzpcjsm.js:183785:42)
+    at ./node_modules/gl/index.js (C:\Users\patri\AppData\Roaming\KOII-Desktop-Node\executables\bafybeibuzhjjokiepigzkrm4nmqwktjqi2kzycphvxftomasm6vfzpcjsm.js:58195:20)
+    at __webpack_require__ (C:\Users\patri\AppData\Roaming\KOII-Desktop-Node\executables\bafybeibuzhjjokiepigzkrm4nmqwktjqi2kzycphvxftomasm6vfzpcjsm.js:183785:42)
+    at ./node_modules/gpu.js/src/backend/headless-gl/kernel.js (C:\Users\patri\AppData\Roaming\KOII-Desktop-Node\executables\bafybeibuzhjjokiepigzkrm4nmqwktjqi2kzycphvxftomasm6vfzpcjsm.js:71220:20) {
+  tries: [
+    'C:\\Users\\patri\\build\\webgl.node',
+    'C:\\Users\\patri\\build\\Debug\\webgl.node',
+    'C:\\Users\\patri\\build\\Release\\webgl.node',
+    'C:\\Users\\patri\\out\\Debug\\webgl.node',
+    'C:\\Users\\patri\\Debug\\webgl.node',
+    'C:\\Users\\patri\\out\\Release\\webgl.node',
+    'C:\\Users\\patri\\Release\\webgl.node',
+    'C:\\Users\\patri\\build\\default\\webgl.node',
+    'C:\\Users\\patri\\compiled\\18.12.1\\win32\\x64\\webgl.node',
+    'C:\\Users\\patri\\addon-build\\release\\install-root\\webgl.node',
+    'C:\\Users\\patri\\addon-build\\debug\\install-root\\webgl.node',
+    'C:\\Users\\patri\\addon-build\\default\\install-root\\webgl.node',
+    'C:\\Users\\patri\\lib\\binding\\node-v113-win32-x64\\webgl.node'
+  ]
+}
+
+Node.js v18.12.1

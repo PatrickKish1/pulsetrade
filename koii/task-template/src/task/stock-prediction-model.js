@@ -233,17 +233,17 @@ export default StockPredictor;
 
 
 // test model
-// const predictor = new StockPredictor({
-//     symbol: 'AAPL',
-//     startDate: '2023-01-01',
-//     endDate: '2023-12-31',
-//     timespan: 'day',
-//     epochs: 15,
-//     lookback: 30,
-//     learningRate: 0.003,
-//     iterations: 2000,
-//     hiddenLayers: [16, 16, 8]
-// });
+const predictor = new StockPredictor({
+    symbol: 'AAPL',
+    startDate: '2023-01-01',
+    endDate: '2023-12-31',
+    timespan: 'day',
+    epochs: 15,
+    lookback: 30,
+    learningRate: 0.003,
+    iterations: 2000,
+    hiddenLayers: [16, 16, 8]
+});
 
-// const results = await predictor.runPrediction();
-// predictor.saveResults(results);
+const results = await predictor.runPrediction();
+predictor.saveResults(results);

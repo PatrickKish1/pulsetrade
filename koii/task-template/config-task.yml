@@ -5,7 +5,7 @@
 
 ## Task Name ##
 # Maximum 24 characters.
-task_name: "Future Of Blocakchain"
+task_name: "Pulse Trade AI"
 
 ## Task Author ##
 author: "GrimmJaw"
@@ -25,10 +25,10 @@ repositoryUrl: "https://github.com/PatrickKish1/pulsetrade"
 
 ## Image URL ##
 # 230x86 pixels.
-imageUrl: "imageUrl"
+imageUrl: "https://i.imgur.com/HPELoUC.png"
 
 ## Info URL ##
-infoUrl: "infoUrl"
+infoUrl: "https://pulsetrade-app.vercel.app/"
 
 ####################################### TASK CONFIGURATION ######################################
 
@@ -66,7 +66,7 @@ task_type: "KPL"
 
 ## Token Mint Address (ONLY for KPL tasks) ##
 # The Fire Token address is provided as an example.
-token_type: "2Q1yyiMjTE4d4Qwb4Fs8FGm5KGfx18z8JbtkweLhXDcw"
+token_type: "9ZzSfVx74Z7ZbugYo5obJAWbnrjWZyVeyQ5XsQD3vLhR"
 
 ## Total Bounty Amount ##
 # The total bounty amount that will be available for distribution over all rounds.
@@ -107,12 +107,12 @@ tags: ["Future of Blockchain"]
 # Environment ##
 # TEST or PRODUCTION
 # Production mode will expose your task to all the task runners, even if not whitelisted.
-environment: "TEST"
+environment: "PRODUCTION"
 
 #################################### FOR UPDATING TASKS ONLY ####################################
 
 ## Old Task ID ##
-task_id: ""
+task_id: "8BAW1pquW6QpsC5aXvctgqMHqbSdvG1VujcPAZga31h"
 
 ## Migration Description ##
 migrationDescription: ""
